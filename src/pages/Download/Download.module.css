@@ -1,0 +1,41 @@
+.container{
+    width: 100%;
+    height: 100vh; 
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("./../../images/bg1.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    max-width: 30rem ;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+}
+.button{
+    padding: 1.25rem 2.5rem;
+    border-radius: 6px;
+    background-color: rgb(29, 128, 159);
+    color: white;
+    transition: background-color .2s linear; 
+}
+.button:hover{
+    background-color: #17667f;
+    cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+    .container{
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+        height: 70vh;
+    }
+}

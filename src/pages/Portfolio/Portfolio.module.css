@@ -1,0 +1,145 @@
+.container{
+    width: 100%;
+    height: 140vh;
+}
+.innerContainer{
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    text-align: center;
+}
+.head{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: rgb(236, 184, 7);
+    font-weight: 700;
+    line-height: 1.2;
+}
+.title{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(33, 37, 41);
+}
+.cards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card{
+    width: 50%;
+    gap: 0;
+    height: auto;
+    position: relative;
+    height: 50%;
+    transition: transform 0.3s ease-in-out, background-color 0.5s ease;
+
+}
+.project{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+
+}
+.project img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out,  background-color 0.5s ease;
+}
+.card:hover .hover{
+    opacity: 1;
+    transform: scale(0.9);
+    background-color: rgba(29, 128, 159, 0.8);
+}
+.card:hover .project{
+    transform: scale(0.9);
+}
+.description{
+    position: absolute;
+    bottom: 5rem;
+    left: 5rem;
+    z-index: 100;
+}
+.description p{
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: white;
+    word-wrap: wrap;
+    max-width: 30rem;
+}
+.description h4{
+    color: white;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        height: 200vh;
+    }
+
+    .cards{
+        gap: 10px;
+    }
+    .card{
+        height: 25%;
+        width: 100%;
+    }
+    .project{
+        height: 100%;
+        width: 100%;
+        transition: transform 0.3s ease-in-out;
+    
+    }
+    .project img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+
+    .card:hover .hover{
+        opacity: 0;
+        transform: scale(1);
+        background-color: rgba(29, 128, 159, 0.8);
+    }
+
+    .card:hover .project{
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        height: 150vh;
+    }
+
+    .description{
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        z-index: 100;
+    }
+}

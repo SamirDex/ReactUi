@@ -1,0 +1,84 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../../images/bg2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.header{
+    letter-spacing: 2px;
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family:  "Source Sans Pro", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #212429;
+    margin-bottom: .25rem;
+}
+.description{
+    font-style: italic;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #212429;
+    font-family:  "Source Sans Pro", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.2;
+}
+.text{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button{
+    text-decoration: none;
+    border-radius: .25rem;
+    background-color: #1d809f;
+    padding: 1.25rem 2.5rem; 
+    color: white;
+    margin-top: 2rem;
+    font-size: 14px;
+    transition: all .2s linear;
+}
+.btnContainer{
+    margin-top: 4rem;
+    font-family:  "Source Sans Pro", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.button:hover{
+    background-color: #166077;
+}
+.menu{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 25px;
+    padding: 1rem;
+    background: rgba(52, 58, 64, 0.5);
+    line-height: 50px;
+    width: 50px;
+    z-index: 100;
+    height: 50px;
+    border-radius: .5rem;
+    transition: background .2s linear;
+}
+.menu:hover{
+    background: rgb(52, 58, 64);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .container{
+        height: 70vh;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container{
+        width: 100%;
+        text-align: center;
+    }
+}
